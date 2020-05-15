@@ -1,0 +1,6 @@
+framework module Pods_TabelAndCollection {
+  umbrella header "Pods-TabelAndCollection-umbrella.h"
+
+  export *
+  module * { export * }
+}

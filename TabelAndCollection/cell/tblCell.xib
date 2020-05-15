@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="tblCell" customModule="TabelAndCollection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMa-oW-NmY">
+                        <rect key="frame" x="5" y="5" width="404" height="90"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnV-VN-nCk">
+                                <rect key="frame" x="0.0" y="0.0" width="404" height="40"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vNd-Pt-1VP"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge" translatesAutoresizingMaskIntoConstraints="NO" id="584-bD-Afu">
+                                <rect key="frame" x="10" y="15" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="f0B-rK-WCi"/>
+                                    <constraint firstAttribute="height" constant="60" id="lNR-vh-AFU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bq-lU-zqL">
+                                <rect key="frame" x="80" y="42" width="319" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="584-bD-Afu" firstAttribute="leading" secondItem="jMa-oW-NmY" secondAttribute="leading" constant="10" id="Acc-mk-0Fy"/>
+                            <constraint firstAttribute="trailing" secondItem="3Bq-lU-zqL" secondAttribute="trailing" constant="5" id="Cv7-ub-YiD"/>
+                            <constraint firstItem="pnV-VN-nCk" firstAttribute="leading" secondItem="jMa-oW-NmY" secondAttribute="leading" id="Fw6-wP-Ftz"/>
+                            <constraint firstItem="3Bq-lU-zqL" firstAttribute="top" secondItem="pnV-VN-nCk" secondAttribute="bottom" constant="2" id="NUb-Gh-cXy"/>
+                            <constraint firstItem="3Bq-lU-zqL" firstAttribute="leading" secondItem="584-bD-Afu" secondAttribute="trailing" constant="10" id="bhL-Vd-LWx"/>
+                            <constraint firstAttribute="trailing" secondItem="pnV-VN-nCk" secondAttribute="trailing" id="iOV-Yc-rog"/>
+                            <constraint firstItem="584-bD-Afu" firstAttribute="top" secondItem="jMa-oW-NmY" secondAttribute="top" constant="15" id="wBf-3k-hOc"/>
+                            <constraint firstItem="pnV-VN-nCk" firstAttribute="top" secondItem="jMa-oW-NmY" secondAttribute="top" id="z2H-2k-jt5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jMa-oW-NmY" secondAttribute="bottom" constant="5" id="4jI-0H-dvX"/>
+                <constraint firstItem="jMa-oW-NmY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Wjb-8O-QpY"/>
+                <constraint firstAttribute="trailing" secondItem="jMa-oW-NmY" secondAttribute="trailing" constant="5" id="Zlk-ya-czm"/>
+                <constraint firstItem="jMa-oW-NmY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="gaB-rZ-CTt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgProfile" destination="584-bD-Afu" id="YeL-Yc-37f"/>
+                <outlet property="mainView" destination="jMa-oW-NmY" id="mkm-KS-0bS"/>
+                <outlet property="txtName" destination="3Bq-lU-zqL" id="lnZ-It-tp6"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="135.9375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bridge" width="193.5" height="180"/>
+    </resources>
+</document>
